@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -15,6 +15,38 @@ function helloWorld() {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (helloWorld);
 
+
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _sanfran_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _sanfran_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sanfran_jpg__WEBPACK_IMPORTED_MODULE_0__);
+
+function addImage() {
+  const img = document.createElement("img");
+
+  img.alt = "SanFran";
+  img.width = "300";
+  img.src = (_sanfran_jpg__WEBPACK_IMPORTED_MODULE_0___default());
+
+  const body = document.querySelector("body");
+  body.appendChild(img);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addImage);
+
+
+/***/ }),
+/* 3 */
+/***/ (() => {
+
+throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n(Source code omitted for this binary file)");
 
 /***/ })
 /******/ 	]);
@@ -44,6 +76,18 @@ function helloWorld() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -74,13 +118,17 @@ function helloWorld() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hello_world__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _add_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
 
 
 (0,_hello_world__WEBPACK_IMPORTED_MODULE_0__["default"])();
+(0,_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
 })();
 
