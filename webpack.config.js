@@ -13,7 +13,7 @@ module.exports = {
     rules: [
       {
         test: /\.(png|jpg|ttf|eot|svg|woff(2)?)(\S+)?$/,
-        type: "asset/inline",
+        type: "asset",
       },
     ],
   },
