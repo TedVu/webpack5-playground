@@ -14,6 +14,11 @@ module.exports = {
       {
         test: /\.(png|jpg|ttf|eot|svg|woff(2)?)(\S+)?$/,
         type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 3 * 1024,
+          },
+        },
       },
     ],
   },
