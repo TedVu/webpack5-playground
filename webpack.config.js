@@ -5,7 +5,8 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "auto", // this is the default in webpack5 it will look get the path from dist directory
+    publicPath: "dist/", // this is the default in webpack5 it will look get the path from dist directory
+    // public path can also be a CDN
   },
   mode: "none",
   module: {
